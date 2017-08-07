@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+/* Base CSS */
+.alignleft {
+  float: left;
+  margin-right: 15px; }
+
+.alignright {
+  float: right;
+  margin-left: 15px; }
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px; }
+
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  font-weight: 700;
+  color: #3D4451; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #EFEFEF; }
+
+a:hover {
+  text-decoration: none; }
+
+.section-title {
+  margin-bottom: 30px;
+  text-align: center; }
+  .section-title h2 {
+    font-weight: 400; }
+
+/* ----------------------------------------------------
+                    Header CSS 
+ ----------------------------------------------------*/
+header {
+  background: #4C545F;
+  padding: 70px 0; }
+  header logo {
+    margin-top: 4px; }
+  header .main-menu {
+    margin-top: 5px; }
+    header .main-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: right; }
+      header .main-menu ul li {
+        display: inline-block; }
+        header .main-menu ul li:hover a:after {
+          opacity: 1;
+          visibility: visible; }
+        header .main-menu ul li a {
+          display: block;
+          margin-left: 20px;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 13px;
+          color: #ffffff;
+          position: relative; }
+          header .main-menu ul li a:after {
+            position: absolute;
+            width: 100%;
+            bottom: -3px;
+            left: 0;
+            background: #26CC63;
+            content: "";
+            height: 2px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s; }
+  header .responsive-menu span {
+    border: 1px solid #70767F;
+    color: #ffffff;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center; }
+
+/* ----------------------------------------------------
+                   About me CSS 
+----------------------------------------------------*/
+.about-me-area {
+  position: relative;
+  z-index: 1; }
+  .about-me-area:after {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #4C545F; }
+  .about-me-area .about-me-description {
+    background: #fff;
+    padding: 40px; }
+    .about-me-area .about-me-description .about-me-heading {
+      border-bottom: 1px solid #D4D5D6;
+      padding-bottom: 20px; }
+      .about-me-area .about-me-description .about-me-heading h1 {
+        color: #3D4451;
+        margin-top: 35px;
+        margin-bottom: 5px; }
+        .about-me-area .about-me-description .about-me-heading h1 span {
+          font-weight: 300;
+          position: relative; }
+          .about-me-area .about-me-description .about-me-heading h1 span:after {
+            background: #26cc63 none repeat scroll 0 0;
+            color: #fff;
+            content: "Hello";
+            font-size: 14px;
+            font-weight: 700;
+            height: 30px;
+            left: 0;
+            line-height: 30px;
+            position: absolute;
+            text-align: center;
+            top: -30px;
+            width: 70px; }
+      .about-me-area .about-me-description .about-me-heading h4 {
+        font-weight: 400; }
+    .about-me-area .about-me-description .about-me-details {
+      padding-top: 15px; }
+      .about-me-area .about-me-description .about-me-details table td {
+        font-size: 16px;
+        line-height: 28px;
+        color: #A8AAAF; }
+        .about-me-area .about-me-description .about-me-details table td span {
+          font-weight: 700;
+          font-size: 14px;
+          margin-right: 30px;
+          color: #3D4451; }
+        .about-me-area .about-me-description .about-me-details table td .vocation {
+          color: #fff;
+          background: #26CC63;
+          padding: 4px;
+          border-radius: 4px; }
+  .about-me-area .social-media {
+    background: #26CC63;
+    text-align: center; }
+    .about-me-area .social-media a {
+      padding: 30px;
+      display: inline-block;
+      color: #fff;
+      font-size: 20px; }
+  .about-me-area .resume-to-me {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0; }
+    .about-me-area .resume-to-me .borderd-btn {
+      border: 1px solid #cbcdcf;
+      color: #333;
+      display: inline-block;
+      font-weight: 700;
+      padding: 20px 60px;
+      text-align: center;
+      font-size: 14px;
+      color: #3D4451;
+      margin-bottom: 30px; }
+
+/* ----------------------------------------------------
+                    About me CSS 
+ ----------------------------------------------------*/
+.professional-area .my-skill {
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #DBDBDB; }
+  .professional-area .my-skill .single-progressbar .skill_text {
+    margin-bottom: 5px; }
+    .professional-area .my-skill .single-progressbar .skill_text .skill_per {
+      position: absolute;
+      right: 15px; }
+  .professional-area .my-skill .single-progressbar .progress {
+    background: #CCF5E0;
+    height: 5px; }
+    .professional-area .my-skill .single-progressbar .progress .progress-bar {
+      background: #26CC63; }
+
+/* ----------------------------------------------------
+                   My Portfolio CSS 
+----------------------------------------------------*/
+.my-portfolio {
+  padding: 50px 0; }
+  .my-portfolio .portfolio-menu {
+    padding-bottom: 30px;
+    text-align: center; }
+    .my-portfolio .portfolio-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .my-portfolio .portfolio-menu ul li {
+        border-bottom: 3px solid #fff;
+        display: inline-block;
+        padding: 10px;
+        margin: -2px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: 0.3s;
+        cursor: pointer; }
+        .my-portfolio .portfolio-menu ul li:hover {
+          border-color: #26CC63; }
+  .my-portfolio .single-portfolio.big-height {
+    height: 600px; }
+    .my-portfolio .single-portfolio.big-height .potrfolio-bg h3 {
+      bottom: 20%;
+      left: 10%; }
+  .my-portfolio .single-portfolio {
+    height: 285px;
+    background: #ddd;
+    margin-bottom: 30px;
+    position: relative; }
+    .my-portfolio .single-portfolio:hover .potrfolio-bg {
+      opacity: 1;
+      visibility: visible; }
+    .my-portfolio .single-portfolio .potrfolio-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #4C545F;
+      padding: 40px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s; }
+      .my-portfolio .single-portfolio .potrfolio-bg h3 {
+        position: absolute;
+        bottom: 25%;
+        color: #fff;
+        display: inline-block; }
+        .my-portfolio .single-portfolio .potrfolio-bg h3 span {
+          display: block;
+          margin-top: 6px;
+          font-size: 13px;
+          font-weight: 400;
+          color: #BBBDC0;
+          margin-bottom: 10px; }
+      .my-portfolio .single-portfolio .potrfolio-bg .hover-icon {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        width: 100%; }
+        .my-portfolio .single-portfolio .potrfolio-bg .hover-icon a {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: #00CC66;
+          border: 1px solid #BBBDC0;
+          border-radius: 4px;
+          display: inline-block;
+          margin: 5px;
+          font-size: 20px;
+          transition: 0.3s; }
+          .my-portfolio .single-portfolio .potrfolio-bg .hover-icon a:hover {
+            border-color: #00CC66;
+            color: #fff; }
+
+/* ----------------------------------------------------
+                  My Experience CSS 
+----------------------------------------------------*/
+.work-experience-area .work-timeline {
+  margin-top: 50px;
+  position: relative;
+  display: inline-block; }
+  .work-experience-area .work-timeline:after {
+    background: #bfe8d4 none repeat scroll 0 0;
+    content: "";
+    height: 69%;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    top: 5%;
+    width: 6px; }
+  .work-experience-area .work-timeline .timeline-left {
+    padding-right: 30px; }
+    .work-experience-area .work-timeline .timeline-left .single-timeline {
+      background: #fff none repeat scroll 0 0;
+      border-top: 6px solid #00CC66;
+      box-shadow: 0 0 10px #dfdfdf;
+      padding: 40px;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px; }
+      .work-experience-area .work-timeline .timeline-left .single-timeline:after {
+        background: #fff;
+        content: "";
+        height: 50px;
+        position: absolute;
+        right: -4%;
+        top: 10%;
+        transform: rotate(45deg);
+        width: 50px; }
+      .work-experience-area .work-timeline .timeline-left .single-timeline:before {
+        background: #00cc66 none repeat scroll 0 0;
+        border-radius: 50%;
+        content: "";
+        height: 14px;
+        position: absolute;
+        right: -10%;
+        top: 15%;
+        transform: rotate(45deg);
+        width: 14px;
+        z-index: 1; }
+      .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading {
+        text-align: center; }
+        .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h5 {
+          font-size: 16px;
+          color: #00CC66; }
+        .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h3 {
+          display: inline-block; }
+          .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h3 span {
+            display: block;
+            font-size: 16px;
+            color: #9A9A9A;
+            margin-top: 15px;
+            font-weight: 400; }
+      .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-body {
+        color: #9a9a9a;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: left9A; }
+  .work-experience-area .work-timeline .timeline-right {
+    padding-left: 30px;
+    margin-top: 70px; }
+    .work-experience-area .work-timeline .timeline-right .single-timeline {
+      background: #fff none repeat scroll 0 0;
+      border-top: 6px solid #00CC66;
+      box-shadow: 0 0 10px #dfdfdf;
+      padding: 40px;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px; }
+      .work-experience-area .work-timeline .timeline-right .single-timeline:after {
+        background: #fff;
+        content: "";
+        height: 50px;
+        position: absolute;
+        left: -4%;
+        top: 10%;
+        transform: rotate(45deg);
+        width: 50px; }
+      .work-experience-area .work-timeline .timeline-right .single-timeline:before {
+        background: #00cc66 none repeat scroll 0 0;
+        border-radius: 50%;
+        content: "";
+        height: 14px;
+        position: absolute;
+        left: -10%;
+        top: 15%;
+        transform: rotate(45deg);
+        width: 14px;
+        z-index: 1; }
+      .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading {
+        text-align: center; }
+        .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h5 {
+          font-size: 16px;
+          color: #00CC66; }
+        .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h3 {
+          display: inline-block; }
+          .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h3 span {
+            display: block;
+            font-size: 16px;
+            color: #9A9A9A;
+            margin-top: 15px;
+            font-weight: 400; }
+      .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-body {
+        color: #9a9a9a;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: left9A; }
+
+/*# sourceMappingURL=style.css.map */
