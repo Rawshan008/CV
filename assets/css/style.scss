@@ -39,7 +39,93 @@ a:hover { text-decoration: none }
         font-weight: 400;
     }
 }
-
+.single-timeline{
+    background: #fff none repeat scroll 0 0;
+    border-top: 6px solid #00CC66;
+    box-shadow: 0 0 10px #dfdfdf;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    &:after{
+        background: #fff;
+        content: "";
+        height: 50px;
+        position: absolute;
+        right: -4%;
+        top: 10%;
+        transform: rotate(45deg);
+        width: 50px;
+    }
+    &:before{
+       background: #00cc66 none repeat scroll 0 0;
+        border-radius: 50%;
+        content: "";
+        height: 14px;
+        position: absolute;
+        right: -10%;
+        top: 15%;
+        transform: rotate(45deg);
+        width: 14px;
+        z-index: 1;
+    }    
+}
+.timeline-heading{
+    text-align: center;
+    h5{
+        font-size: 16px;
+        color: #00CC66;
+    }
+    h3{
+        display: inline-block;
+        span{
+            display: block;
+            font-size: 16px;
+            color: #9A9A9A;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+    }
+}
+.timeline-body{
+    color: #9a9a9a;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left9A;
+}
+.work-timeline{
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    &:after{
+        background: #bfe8d4 none repeat scroll 0 0;
+        content: "";
+        height: 69%;
+        left: 50%;
+        margin-left: -3px;
+        position: absolute;
+        top: 5%;
+        width: 6px;
+    } 
+}
+.timeline-left{
+    padding-right: 30px; 
+        
+}
+.timeline-right{
+    padding-left: 30px; 
+    margin-top: 70px;
+    .single-timeline{
+        &:after{
+            left: -4%;
+        }
+        &:before{
+            left: -10%;
+            top: 15%;
+        }
+    }
+}
 /* ----------------------------------------------------
                     Header CSS 
  ----------------------------------------------------*/
@@ -327,138 +413,137 @@ a:hover { text-decoration: none }
                    My Experience CSS 
  ----------------------------------------------------*/
 .work-experience-area{
-    .work-timeline{
-        margin-top: 50px;
-        position: relative;
-        display: inline-block;
-        &:after{
-            background: #bfe8d4 none repeat scroll 0 0;
-            content: "";
-            height: 69%;
-            left: 50%;
-            margin-left: -3px;
-            position: absolute;
-            top: 5%;
-            width: 6px;
-        }
-        .timeline-left{
-                padding-right: 30px; 
-               .single-timeline{
-                background: #fff none repeat scroll 0 0;
-                border-top: 6px solid #00CC66;
-                box-shadow: 0 0 10px #dfdfdf;
-                padding: 40px;
-                display: inline-block;
-                width: 100%;
-                position: relative;
-                margin-bottom: 30px;
-                &:after{
-                    background: #fff;
-                    content: "";
-                    height: 50px;
-                    position: absolute;
-                    right: -4%;
-                    top: 10%;
-                    transform: rotate(45deg);
-                    width: 50px;
-                }
-                &:before{
-                   background: #00cc66 none repeat scroll 0 0;
-                    border-radius: 50%;
-                    content: "";
-                    height: 14px;
-                    position: absolute;
-                    right: -10%;
-                    top: 15%;
-                    transform: rotate(45deg);
-                    width: 14px;
-                    z-index: 1;
-                }
-                .timeline-heading{
-                    text-align: center;
-                    h5{
-                        font-size: 16px;
-                        color: #00CC66;
-                    }
-                    h3{
-                        display: inline-block;
-                        span{
-                            display: block;
-                            font-size: 16px;
-                            color: #9A9A9A;
-                            margin-top: 15px;
-                            font-weight: 400;
-                        }
-                    }
-                }
-                .timeline-body{
-                    color: #9a9a9a;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: left9A;
-                }
-            } 
-        }
-        .timeline-right{
-            padding-left: 30px; 
-            margin-top: 70px;
-            .single-timeline{
-                background: #fff none repeat scroll 0 0;
-                border-top: 6px solid #00CC66;
-                box-shadow: 0 0 10px #dfdfdf;
-                padding: 40px;
-                display: inline-block;
-                width: 100%;
-                position: relative;
-                margin-bottom: 30px;
-                &:after{
-                    background: #fff;
-                    content: "";
-                    height: 50px;
-                    position: absolute;
-                    left: -4%;
-                    top: 10%;
-                    transform: rotate(45deg);
-                    width: 50px;
-                }
-                &:before{
-                   background: #00cc66 none repeat scroll 0 0;
-                    border-radius: 50%;
-                    content: "";
-                    height: 14px;
-                    position: absolute;
-                    left: -10%;
-                    top: 15%;
-                    transform: rotate(45deg);
-                    width: 14px;
-                    z-index: 1;
-                }
-                .timeline-heading{
-                    text-align: center;
-                    h5{
-                        font-size: 16px;
-                        color: #00CC66;
-                    }
-                    h3{
-                        display: inline-block;
-                        span{
-                            display: block;
-                            font-size: 16px;
-                            color: #9A9A9A;
-                            margin-top: 15px;
-                            font-weight: 400;
-                        }
-                    }
-                }
-                .timeline-body{
-                    color: #9a9a9a;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: left9A;
-                }
-            } 
-
-        }
-        
-    }
+    padding: 100px 0;
 }
+ /* ----------------------------------------------------
+                   My Education CSS 
+ ----------------------------------------------------*/
+ .education-area{
+    .work-timeline{
+        &:after{
+            top: 5%;
+            height: 66%;
+        }
+        .single-timeline{
+            .timeline-body{
+                margin-top: 0;
+                h5{
+                    background: #26cc63;
+                    color: #fff;
+                    display: inline-block;
+                    font-weight: 400;
+                    padding: 5px;
+                    position: relative;
+                    &:after{
+                        border-right: 15px solid transparent;
+                        border-top: 15px solid #26cc63;
+                        bottom: -12px;
+                        content: "";
+                        height: 0;
+                        left: 5px;
+                        position: absolute;
+                        width: 0;                    
+                    }
+                }
+                h3{
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+ }
+/* ----------------------------------------------------
+                   Client testmonial CSS 
+ ----------------------------------------------------*/
+ .client-area{
+    padding: 100px 0;
+    .client-carousel{
+        .owl-item.active.center{
+            img{
+               filter: grayscale(0%);
+               opacity: 1;
+            }
+        }
+        .single-client{
+            height: 100px;
+            width: 100%;
+            display: table;
+            .single-client-table{
+                display: table-cell;
+                vertical-align: middle;
+                img{
+                    max-width: 175px;
+                    filter: grayscale(100%);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+ }
+ /* ----------------------------------------------------
+                   Reference testmonial CSS 
+ ----------------------------------------------------*/
+ .reference-area{
+    .reference-testmonial{
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 10px #dfdfdf;
+        padding: 60px 200px 40px 50px;
+        position: relative;
+        .owl-nav {
+          position: absolute;
+          right: 2%;
+          top: 6%;
+          z-index: 2;
+          div {
+              border: 1px solid #d8dadc;
+              font-size: 25px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+              width: 60px;
+              &.owl-prev{
+                margin-bottom: 10px;
+              }
+            }
+        }
+        .single-reference-testmonial{
+            padding-left: 50px;
+            .reference-icon{
+                color: #00cc66;
+                font-size: 30px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                z-index: 3;
+            }
+            p{
+                color: #73777F;
+            }
+            hr{
+                margin-bottom: 32px;
+            }
+            img{
+                float: left;
+                height: 70px;
+                margin-right: 20px;
+                overflow: hidden;
+                width: 70px;
+            }
+            h3{
+                display: inline-block;
+                line-height: 26px;
+                overflow: hidden;
+                span{
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+ }

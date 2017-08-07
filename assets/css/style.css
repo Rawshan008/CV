@@ -42,6 +42,82 @@ a:hover {
   .section-title h2 {
     font-weight: 400; }
 
+.single-timeline {
+  background: #fff none repeat scroll 0 0;
+  border-top: 6px solid #00CC66;
+  box-shadow: 0 0 10px #dfdfdf;
+  padding: 40px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px; }
+  .single-timeline:after {
+    background: #fff;
+    content: "";
+    height: 50px;
+    position: absolute;
+    right: -4%;
+    top: 10%;
+    transform: rotate(45deg);
+    width: 50px; }
+  .single-timeline:before {
+    background: #00cc66 none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    position: absolute;
+    right: -10%;
+    top: 15%;
+    transform: rotate(45deg);
+    width: 14px;
+    z-index: 1; }
+
+.timeline-heading {
+  text-align: center; }
+  .timeline-heading h5 {
+    font-size: 16px;
+    color: #00CC66; }
+  .timeline-heading h3 {
+    display: inline-block; }
+    .timeline-heading h3 span {
+      display: block;
+      font-size: 16px;
+      color: #9A9A9A;
+      margin-top: 15px;
+      font-weight: 400; }
+
+.timeline-body {
+  color: #9a9a9a;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: left9A; }
+
+.work-timeline {
+  margin-top: 50px;
+  position: relative;
+  display: inline-block; }
+  .work-timeline:after {
+    background: #bfe8d4 none repeat scroll 0 0;
+    content: "";
+    height: 69%;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    top: 5%;
+    width: 6px; }
+
+.timeline-left {
+  padding-right: 30px; }
+
+.timeline-right {
+  padding-left: 30px;
+  margin-top: 70px; }
+  .timeline-right .single-timeline:after {
+    left: -4%; }
+  .timeline-right .single-timeline:before {
+    left: -10%;
+    top: 15%; }
+
 /* ----------------------------------------------------
                     Header CSS 
  ----------------------------------------------------*/
@@ -274,117 +350,108 @@ header {
 /* ----------------------------------------------------
                   My Experience CSS 
 ----------------------------------------------------*/
-.work-experience-area .work-timeline {
-  margin-top: 50px;
-  position: relative;
-  display: inline-block; }
-  .work-experience-area .work-timeline:after {
-    background: #bfe8d4 none repeat scroll 0 0;
-    content: "";
-    height: 69%;
-    left: 50%;
-    margin-left: -3px;
+.work-experience-area {
+  padding: 100px 0; }
+
+/* ----------------------------------------------------
+                  My Education CSS 
+----------------------------------------------------*/
+.education-area .work-timeline:after {
+  top: 5%;
+  height: 66%; }
+.education-area .work-timeline .single-timeline .timeline-body {
+  margin-top: 0; }
+  .education-area .work-timeline .single-timeline .timeline-body h5 {
+    background: #26cc63;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    padding: 5px;
+    position: relative; }
+    .education-area .work-timeline .single-timeline .timeline-body h5:after {
+      border-right: 15px solid transparent;
+      border-top: 15px solid #26cc63;
+      bottom: -12px;
+      content: "";
+      height: 0;
+      left: 5px;
+      position: absolute;
+      width: 0; }
+  .education-area .work-timeline .single-timeline .timeline-body h3 {
+    font-weight: 400; }
+  .education-area .work-timeline .single-timeline .timeline-body p {
+    font-size: 13px;
+    font-weight: 300; }
+
+/* ----------------------------------------------------
+                   Client testmonial CSS 
+ ----------------------------------------------------*/
+.client-area {
+  padding: 100px 0; }
+  .client-area .client-carousel .owl-item.active.center img {
+    filter: grayscale(0%);
+    opacity: 1; }
+  .client-area .client-carousel .single-client {
+    height: 100px;
+    width: 100%;
+    display: table; }
+    .client-area .client-carousel .single-client .single-client-table {
+      display: table-cell;
+      vertical-align: middle; }
+      .client-area .client-carousel .single-client .single-client-table img {
+        max-width: 175px;
+        filter: grayscale(100%);
+        opacity: 0.5; }
+
+/* ----------------------------------------------------
+                  Reference testmonial CSS 
+----------------------------------------------------*/
+.reference-area .reference-testmonial {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 10px #dfdfdf;
+  padding: 60px 200px 40px 50px;
+  position: relative; }
+  .reference-area .reference-testmonial .owl-nav {
     position: absolute;
-    top: 5%;
-    width: 6px; }
-  .work-experience-area .work-timeline .timeline-left {
-    padding-right: 30px; }
-    .work-experience-area .work-timeline .timeline-left .single-timeline {
-      background: #fff none repeat scroll 0 0;
-      border-top: 6px solid #00CC66;
-      box-shadow: 0 0 10px #dfdfdf;
-      padding: 40px;
+    right: 2%;
+    top: 6%;
+    z-index: 2; }
+    .reference-area .reference-testmonial .owl-nav div {
+      border: 1px solid #d8dadc;
+      font-size: 25px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      width: 60px; }
+      .reference-area .reference-testmonial .owl-nav div.owl-prev {
+        margin-bottom: 10px; }
+  .reference-area .reference-testmonial .single-reference-testmonial {
+    padding-left: 50px; }
+    .reference-area .reference-testmonial .single-reference-testmonial .reference-icon {
+      color: #00cc66;
+      font-size: 30px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: 3; }
+    .reference-area .reference-testmonial .single-reference-testmonial p {
+      color: #73777F; }
+    .reference-area .reference-testmonial .single-reference-testmonial hr {
+      margin-bottom: 32px; }
+    .reference-area .reference-testmonial .single-reference-testmonial img {
+      float: left;
+      height: 70px;
+      margin-right: 20px;
+      overflow: hidden;
+      width: 70px; }
+    .reference-area .reference-testmonial .single-reference-testmonial h3 {
       display: inline-block;
-      width: 100%;
-      position: relative;
-      margin-bottom: 30px; }
-      .work-experience-area .work-timeline .timeline-left .single-timeline:after {
-        background: #fff;
-        content: "";
-        height: 50px;
-        position: absolute;
-        right: -4%;
-        top: 10%;
-        transform: rotate(45deg);
-        width: 50px; }
-      .work-experience-area .work-timeline .timeline-left .single-timeline:before {
-        background: #00cc66 none repeat scroll 0 0;
-        border-radius: 50%;
-        content: "";
-        height: 14px;
-        position: absolute;
-        right: -10%;
-        top: 15%;
-        transform: rotate(45deg);
-        width: 14px;
-        z-index: 1; }
-      .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading {
-        text-align: center; }
-        .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h5 {
-          font-size: 16px;
-          color: #00CC66; }
-        .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h3 {
-          display: inline-block; }
-          .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-heading h3 span {
-            display: block;
-            font-size: 16px;
-            color: #9A9A9A;
-            margin-top: 15px;
-            font-weight: 400; }
-      .work-experience-area .work-timeline .timeline-left .single-timeline .timeline-body {
-        color: #9a9a9a;
-        font-size: 16px;
-        margin-top: 20px;
-        text-align: left9A; }
-  .work-experience-area .work-timeline .timeline-right {
-    padding-left: 30px;
-    margin-top: 70px; }
-    .work-experience-area .work-timeline .timeline-right .single-timeline {
-      background: #fff none repeat scroll 0 0;
-      border-top: 6px solid #00CC66;
-      box-shadow: 0 0 10px #dfdfdf;
-      padding: 40px;
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      margin-bottom: 30px; }
-      .work-experience-area .work-timeline .timeline-right .single-timeline:after {
-        background: #fff;
-        content: "";
-        height: 50px;
-        position: absolute;
-        left: -4%;
-        top: 10%;
-        transform: rotate(45deg);
-        width: 50px; }
-      .work-experience-area .work-timeline .timeline-right .single-timeline:before {
-        background: #00cc66 none repeat scroll 0 0;
-        border-radius: 50%;
-        content: "";
-        height: 14px;
-        position: absolute;
-        left: -10%;
-        top: 15%;
-        transform: rotate(45deg);
-        width: 14px;
-        z-index: 1; }
-      .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading {
-        text-align: center; }
-        .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h5 {
-          font-size: 16px;
-          color: #00CC66; }
-        .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h3 {
-          display: inline-block; }
-          .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-heading h3 span {
-            display: block;
-            font-size: 16px;
-            color: #9A9A9A;
-            margin-top: 15px;
-            font-weight: 400; }
-      .work-experience-area .work-timeline .timeline-right .single-timeline .timeline-body {
-        color: #9a9a9a;
-        font-size: 16px;
-        margin-top: 20px;
-        text-align: left9A; }
+      line-height: 26px;
+      overflow: hidden; }
+      .reference-area .reference-testmonial .single-reference-testmonial h3 span {
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 7px; }
 
 /*# sourceMappingURL=style.css.map */
