@@ -32,6 +32,32 @@ body {
     background: #EFEFEF;
 }
 a:hover { text-decoration: none }
+.borderd-btn {
+    border: 1px solid #d8dadc;
+    color: #4f5560;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+    width: 90px;
+    margin-bottom: 30px;
+}
+.borderd-btn{
+    border: 1px solid #d8dadc;
+    color: #4f5560;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+    width: 90px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    &:hover{
+        background: #00CC66;
+        border-color: #00CC66;
+        color: #fff;
+    }
+}
 .section-title{
     margin-bottom: 30px; 
     text-align: center;
@@ -547,3 +573,182 @@ a:hover { text-decoration: none }
         }
     }
  }
+/* ----------------------------------------------------
+                   Pricing Table CSS 
+ ----------------------------------------------------*/
+.pricing-table-area{
+    padding: 80px 0;
+    .pricing-table-details{
+        box-shadow: 0 0 10px #dbdbdb;
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            .col-md-4{
+                padding-left: 0;
+                padding-right: 0;
+                .single-table{
+                    box-shadow: 0 0 10px #dbdbdb;
+                    background: #fff;
+                    .table-heading{
+                        background: #373B42;
+                        padding: 40px 0;
+                        transition: 0.3s;
+                        h2{
+                            font-size: 45px;
+                            font-weight: 300;
+                            color: #ffff;
+                            span{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .table-body{
+                        ul{
+                            color: #8b8b8b;
+                            line-height: 30px;
+                            list-style: outside none none;
+                            margin: 0;
+                            padding: 0;
+                            li{
+                                strong{
+                                     color: #373b42;
+                                    display: block;
+                                    font-size: 18px;
+                                    padding: 15px 0;
+                                }
+                                span{
+                                    background: #f44459 none repeat scroll 0 0;
+                                    border-radius: 5px;
+                                    color: #fff;
+                                    padding: 1px 3px;                                }
+                            }
+                        }
+                    }
+                &:hover .table-heading{
+                    background: #00CC66;
+                }
+                }
+            }
+        }
+    }
+}
+/* ----------------------------------------------------
+                   Pricing Table CSS 
+ ----------------------------------------------------*/
+.blog-area{
+    padding: 80px 0;
+    .single-blog{
+        box-shadow: 0 0 10px #dbdbdb;
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        .blog-bg{
+            background: #ddd none repeat scroll 0 0;
+            border-radius: 5px 5px 0 0;
+            height: 300px;
+            position: relative;
+            .blog-date{
+                background: #20cd77 none repeat scroll 0 0;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                padding: 14px 25px;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                p{
+
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 11px;
+                    }
+                }
+            }
+        }
+        .blog-catagory {
+          color: #9a9a9a;
+          padding: 25px 0;
+        }
+        .blog-type{
+            h3{
+                text-transform: uppercase;
+                transition: 0.3s;
+            }
+        }
+        .blog-admin{
+          padding: 25px 0;
+          a{
+            color: #9a9a9a;
+            margin-right: 10px;
+          }
+        }
+    &:hover{
+       .blog-type{
+            h3{
+                color: #20CD77;
+            }
+        } 
+    }
+    }
+}
+/* ----------------------------------------------------
+                   Pricing Table CSS 
+ ----------------------------------------------------*/
+ .contact-me-area{
+    padding: 80px 0;
+    .contact-form{
+        padding: 40px;
+        box-shadow: 0 0 10px #dfdfdf;
+        background: #fff;
+        h4{
+            font-weight: 400;
+        }
+        input[type="submit"] {
+          background: #00cc66 none repeat scroll 0 0;
+          border: 0 none;
+          border-radius: 5px;
+          color: #fff;
+          width: auto;
+          padding: 10px 30px;
+        }
+        input{
+            border-left: 0 none;
+            border-right: 0 none;
+            border-top: 0 none;
+            margin-bottom: 15px;
+            padding: 15px 0;
+            width: 100%;
+        }
+        textarea{
+            border-left: 0 none;
+            border-right: 0 none;
+            border-top: 0 none;
+            margin-bottom: 15px;
+            padding: 15px 0;
+            width: 100%;
+            height: 100px;
+        }
+    }
+    .address-table{
+        padding: 40px;
+        box-shadow: 0 0 10px #dfdfdf;
+        background: #fff;
+        table{
+            width: 100%;
+            line-height: 40px;
+            td{
+                span{
+                    color: #9DA0A4;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .google-map{
+            height: 285px;
+        }
+    }
+    
+ }
+
